@@ -1,0 +1,499 @@
+--- Testing gpu_fast_hash ---
+INFO: Explicitly compiling Numba kernel for gpu_fast_hash (if not already done)...
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([2, 2]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.2950 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 1.0922 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 156.6794 ms
+DEBUG gpu_fast_hash: Total internal time: 158.0666 ms
+INFO: Numba kernel compilation call complete.
+
+--- Benchmarking 1000x1000 fp16 tensor ---
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0575 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.2609 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 46.0283 ms
+DEBUG gpu_fast_hash: Total internal time: 46.3467 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0222 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1533 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 45.9704 ms
+DEBUG gpu_fast_hash: Total internal time: 46.1459 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0215 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1488 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 45.9760 ms
+DEBUG gpu_fast_hash: Total internal time: 46.1462 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0208 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1419 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 43.8777 ms
+DEBUG gpu_fast_hash: Total internal time: 44.0405 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0210 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1373 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5087 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6670 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0210 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1348 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5065 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6624 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0218 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1403 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5145 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6766 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0207 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1368 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5001 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6577 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0206 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1417 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5132 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6754 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0201 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1331 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5035 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6566 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0214 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1345 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.6705 ms
+DEBUG gpu_fast_hash: Total internal time: 42.8264 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0212 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1338 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5042 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6593 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0203 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1307 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4963 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6473 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0203 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1298 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4985 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6485 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0202 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1329 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5061 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6591 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0201 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1296 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5052 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6549 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1299 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4960 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6459 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1316 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4980 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6496 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0288 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1336 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4945 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6570 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1369 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4974 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6543 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1329 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4927 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6454 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0213 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1394 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.6568 ms
+DEBUG gpu_fast_hash: Total internal time: 42.8174 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0212 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1314 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4951 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6477 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0216 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1372 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5039 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6627 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0202 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1330 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5007 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6539 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0202 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1282 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.5025 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6509 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0203 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1343 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4980 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6526 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0210 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1281 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4990 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6481 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0202 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1285 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4922 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6410 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([1000, 1000]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0203 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1274 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 42.4934 ms
+DEBUG gpu_fast_hash: Total internal time: 42.6411 ms
+GPU FNV1a hash (1000x1000 fp16): 24bba3bbca7bae83 (took 42.7441 ms on avg)
+
+--- Benchmarking 128x128 fp16 tensor ---
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1327 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8422 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9948 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0201 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1305 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8410 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9917 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0220 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1352 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 1.0093 ms
+DEBUG gpu_fast_hash: Total internal time: 1.1665 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0214 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1320 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8403 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9937 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1283 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8377 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9858 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1269 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8423 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9891 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1286 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8471 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9955 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1270 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8371 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9841 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1268 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8380 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9847 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1274 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8376 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9848 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1363 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8372 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9935 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1272 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8375 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9847 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0201 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1272 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8381 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9854 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0211 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1316 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.9975 ms
+DEBUG gpu_fast_hash: Total internal time: 1.1502 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0210 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1296 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8378 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9884 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0197 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1270 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8369 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9836 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0197 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1269 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8370 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9836 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1264 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8387 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9850 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0207 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1310 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8377 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9894 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1280 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8382 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9862 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1271 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8358 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9828 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1261 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8546 ms
+DEBUG gpu_fast_hash: Total internal time: 1.0005 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1292 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8360 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9851 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1266 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8357 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9821 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0210 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1308 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 1.0024 ms
+DEBUG gpu_fast_hash: Total internal time: 1.1541 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0208 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1300 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8375 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9883 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1271 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8358 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9827 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0197 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1289 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8461 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9947 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1273 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8388 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9861 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1272 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8375 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9847 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0197 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1261 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8371 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9829 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0196 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1254 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8363 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9813 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0196 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1273 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8396 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9865 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1279 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8392 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9872 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0197 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1261 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8362 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9819 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0212 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1296 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.9993 ms
+DEBUG gpu_fast_hash: Total internal time: 1.1501 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0209 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1283 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8372 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9864 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1275 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8362 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9835 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1268 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8371 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9837 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1276 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8397 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9872 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0194 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1278 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8359 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9831 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0195 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1263 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8359 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9817 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1253 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8360 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9812 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0204 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1302 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8398 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9904 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0197 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1271 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8376 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9844 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0197 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1246 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8361 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9804 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0209 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1290 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 1.0135 ms
+DEBUG gpu_fast_hash: Total internal time: 1.1633 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0208 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1282 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8367 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9856 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0197 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1261 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8537 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9994 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0197 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1252 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8361 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9810 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1249 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8357 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9804 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1248 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8343 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9789 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1264 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8364 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9828 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0198 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1254 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8368 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9820 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0200 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1255 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8422 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9877 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0203 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1257 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8375 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9834 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0199 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1252 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8454 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9905 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0216 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1308 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.9957 ms
+DEBUG gpu_fast_hash: Total internal time: 1.1480 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0209 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1390 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8379 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9978 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([128, 128]), dtype torch.float16
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0196 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1257 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.8365 ms
+DEBUG gpu_fast_hash: Total internal time: 0.9818 ms
+GPU FNV1a hash (128x128 fp16): 112f4371999f5c2f (took 1.0828 ms on avg)
+CPU SHA256 hash (1000x1000 fp16): (took 1.5457 ms on avg)
+
+--- Running verification on a simple NN (Tiny) ---
+Using device: cuda
+INFO: Warming up gpu_fast_hash for Tiny model test...
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([16, 128]), dtype torch.float32
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0712 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.3623 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.4424 ms
+DEBUG gpu_fast_hash: Total internal time: 0.8760 ms
+DEBUG gpu_fast_hash: Called for tensor shape torch.Size([16, 64]), dtype torch.float32
+DEBUG gpu_fast_hash: Prep (contiguous, view, flatten) took: 0.0209 ms
+DEBUG gpu_fast_hash: Bridge (CuPy/Numba) took: 0.1341 ms
+DEBUG gpu_fast_hash: Kernel exec + D2H copy took: 0.2463 ms
+DEBUG gpu_fast_hash: Total internal time: 0.4013 ms
+INFO: Warmup for Tiny model test complete.
+Baseline Tiny model forward: 0.0889 ms
+Tiny model forward with verification: 2.6382 ms
+Overhead: 2866.71%
+Number of records from Tiny: 200
++-----------+------------------+------------------+-----------+
+| tag       | hash_in          | hash_out         |   hash_ms |
++===========+==================+==================+===========+
+| linear_fw | 977d380319f9565f | 54c277a6e26bcd6a |  1.2982   |
++-----------+------------------+------------------+-----------+
+| linear_fw | 6d843c44fa4cf1e6 | 8be5506b986041f2 |  0.815676 |
++-----------+------------------+------------------+-----------+
+| linear_fw | 977d380319f9565f | 54c277a6e26bcd6a |  0.994265 |
++-----------+------------------+------------------+-----------+
+| linear_fw | 6d843c44fa4cf1e6 | 8be5506b986041f2 |  0.817547 |
++-----------+------------------+------------------+-----------+
+| linear_fw | 977d380319f9565f | 54c277a6e26bcd6a |  0.946776 |
++-----------+------------------+------------------+-----------+
+
+--- MNIST training loop section omitted for this debugging run ---

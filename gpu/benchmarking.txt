@@ -1,0 +1,68 @@
+Starting Rigorous Hashing Benchmark...
+
+--- Benchmarking Data Size: 1024 bytes (0.000976562 MB) ---
+GPU cuHash SHA256: f7bc825738f78257df4bf936fd9d61fe3d5bc039cc9bebd1c3bacd7248c2d0cb
+Avg GPU Hashing Time (kernel launch + exec + sync): 0.0325848 ms
+GPU Throughput: 29.2675 MB/s
+CPU C++ SHA256  : f7bc825738f78257df4bf936fd9d61fe3d5bc039cc9bebd1c3bacd7248c2d0cb
+Avg CPU Hashing Time: 0.0325322 ms
+CPU Throughput: 29.3147 MB/s
+SUCCESS: GPU and CPU digests match.
+
+--- Benchmarking Data Size: 131072 bytes (0.125 MB) ---
+GPU cuHash SHA256: ab1f4c428a2058d2ca511f7e8b4dd4f52e29b2e1c69a373831c7965948649608
+Avg GPU Hashing Time (kernel launch + exec + sync): 3.16959 ms
+GPU Throughput: 38.513 MB/s
+CPU C++ SHA256  : ab1f4c428a2058d2ca511f7e8b4dd4f52e29b2e1c69a373831c7965948649608
+Avg CPU Hashing Time: 3.61244 ms
+CPU Throughput: 33.7917 MB/s
+SUCCESS: GPU and CPU digests match.
+
+--- Benchmarking Data Size: 524288 bytes (0.5 MB) ---
+GPU cuHash SHA256: 8c1e96f82bc3983798d4bf13a8af15704ed436db2ace6bcd0494c4873ee36f80
+Avg GPU Hashing Time (kernel launch + exec + sync): 11.7623 ms
+GPU Throughput: 41.5124 MB/s
+CPU C++ SHA256  : 8c1e96f82bc3983798d4bf13a8af15704ed436db2ace6bcd0494c4873ee36f80
+Avg CPU Hashing Time: 14.4422 ms
+CPU Throughput: 33.8093 MB/s
+SUCCESS: GPU and CPU digests match.
+
+--- Benchmarking Data Size: 1048576 bytes (1 MB) ---
+GPU cuHash SHA256: 194c84b92d1cf414e624b5eb09a64ced1be088706b84bc6423bdc5163699a625
+Avg GPU Hashing Time (kernel launch + exec + sync): 23.3906 ms
+GPU Throughput: 41.7502 MB/s
+CPU C++ SHA256  : 194c84b92d1cf414e624b5eb09a64ced1be088706b84bc6423bdc5163699a625
+Avg CPU Hashing Time: 28.9556 ms
+CPU Throughput: 33.7262 MB/s
+SUCCESS: GPU and CPU digests match.
+
+--- Benchmarking Data Size: 2097152 bytes (2 MB) ---
+GPU cuHash SHA256: fa8c6ff4a06f26f30a24c690f31ed781208453377a1cd377fdc94d7e68bd4883
+Avg GPU Hashing Time (kernel launch + exec + sync): 46.7726 ms
+GPU Throughput: 41.7578 MB/s
+CPU C++ SHA256  : fa8c6ff4a06f26f30a24c690f31ed781208453377a1cd377fdc94d7e68bd4883
+Avg CPU Hashing Time: 57.8897 ms
+CPU Throughput: 33.7387 MB/s
+SUCCESS: GPU and CPU digests match.
+
+--- Benchmarking Data Size: 4194304 bytes (4 MB) ---
+GPU cuHash SHA256: 43f85abc4ede0c590eb23c2a267ba596fd5e2008392c42efffd54862249633ca
+Avg GPU Hashing Time (kernel launch + exec + sync): 93.5378 ms
+GPU Throughput: 41.7612 MB/s
+CPU C++ SHA256  : 43f85abc4ede0c590eb23c2a267ba596fd5e2008392c42efffd54862249633ca
+Avg CPU Hashing Time: 115.992 ms
+CPU Throughput: 33.6769 MB/s
+SUCCESS: GPU and CPU digests match.
+
+--- Benchmarking Specific String: "Hello, cuHash! This is a test message." (38 bytes) ---
+
+--- Benchmarking Data Size: 38 bytes (3.62396e-05 MB) ---
+GPU cuHash SHA256: 4936379d12f49c54abcb70cd84fa0bc5b2adbcf4c5c272a46d6d249d65552f72
+Avg GPU Hashing Time (kernel launch + exec + sync): 0.00867416 ms
+GPU Throughput: 4.07996 MB/s
+CPU C++ SHA256  : 4936379d12f49c54abcb70cd84fa0bc5b2adbcf4c5c272a46d6d249d65552f72
+Avg CPU Hashing Time: 0.0031758 ms
+CPU Throughput: 11.1437 MB/s
+SUCCESS: GPU and CPU digests match.
+
+All benchmarks complete.
