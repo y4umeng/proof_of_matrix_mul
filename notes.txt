@@ -1,0 +1,92 @@
+
+IMPORTANT PREREQUISITE THAT ISN'T RELATED TO THE IMPLEMENTATION: THE TOTAL AMOUNT OF PROVER COMPUTE IS KNOWN. (if this isn't true, all of this doesn't work as it is possible to do precompute the matmuls beforehand with the PRNG).
+
+(there is no bitmasking. in the actual implementation, we just pluck out the rows and columns from the random number generator)
+
+
+We will attach a hook to torch.mm such that for each matrix multiplication, the following protocol happens:
+
+- if random > 0.1: continue (the protocol only happens for 10% of the matmuls)
+
+Prover:
+- Sample 0.1% of the rows from C through the PRNG
+- Sample 1% of the values for each column within these rows
+- Stream these values of A and C to the verifier
+
+Verifier: 
+- Receives this new matrix 
+- Does the computation
+
+
+
+Example:
+for a 4096x4096 matrix, this means the prover
+- sends over 40 indices + rows of A  (the same 4 entries for each row)
+- sends over the 160 entries for C
+
+
+verifier performs the matmul for 
+- 40 rows of A DOT 4 columns of B to get the 160 entries in C
+- verifies whether or not the 160 entries of C received matches the result of the computation.
+
+
+
+- The prover and verifier share a PRNG.
+- You only do the protocol on 10% of the forward pass matrix multiplications.
+
+For the 10%, you derive a bitmask on the, say 4096x4096 matrix, where 90% of the values are 0. 
+You only keep the last 10%.
+
+Example: 
+A = 
+1 2 3
+2 1 3
+0 1 2
+
+B = weight matrix that both parties have
+0 1 2
+3 2 1
+2 1 0
+
+C = A@B
+12 8 4
+9 7 5
+7 4 1
+
+Say the bitmask is 
+0 0 0
+0 1 0
+1 0 0
+
+Then, the values that need to be sent over are
+
+A[1:]: 2 1 3
+A[2:]: 0 1 2
+
+[1,1]: 7
+[2,0]: 7
+
+Then, the verifier does the calculation of 
+- A[1:] dot B[:1] = 7
+- A[2:] dot B[:0] = 7
+
+
+
+Part of the selling point is that you don't need each verification to give you total confidence.
+There will be thousands of them running sequentially and the probability compounds.
+THE RANDOMNESS CANNOT BE GAMED THOUGH.
+
+(Be wary of distillation attacks though?)
+
+
+Say we do the verification for 10% of the matrix multiplications and for each one we pick 0.1% of the rows or one percent of the rows and we did the verification on that we sent those rows over along with the corresponding values in the matrix C.
+This looks like picking one percent of the rows of C, and sending over all C[i:] along with A[i:].
+How much overhead is this?
+
+If we do 10% of all forward passes and 1% of all rows of A,C?
+
+
+
+How does the PNRG work? How does it sync the bit masking? 
+- Each bit mask is generated from aspects of the specific computation. The inputs to generate the bitmask are ones such as layer of model, index of matmuls, matrix shape, some other global key agreed upon by both parties.
+
