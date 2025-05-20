@@ -71,8 +71,8 @@ def _prover_send(sampled_A, sampled_C, layer_idx):
     n_cols = sampled_C.shape[1]
     print(f"[Prover] Sending: n_rows={n_rows}, n_cols={n_cols}")
 
-    buf_A = sampled_A.cpu().numpy().astype(np.float32).tobytes()
-    buf_C = sampled_C.cpu().numpy().astype(np.float32).tobytes()
+    buf_A = sampled_A.detach().cpu().numpy().astype(np.float32).tobytes()
+    buf_C = sampled_C.detach().cpu().numpy().astype(np.float32).tobytes()
     hdr = struct.pack("<HHH2x", layer_idx, n_rows, n_cols)
 
     with socket.create_connection((HOST, PORT_BASE + layer_idx)) as s:
